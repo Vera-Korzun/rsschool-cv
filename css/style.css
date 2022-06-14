@@ -63,11 +63,14 @@ section {
 .container {
     margin: 20px auto;
     width: 1024px;
-    display: flex;
-    flex-direction: row;
     background-color: #ffffff;
     box-shadow: 10px 10px 19px 10px rgb(132 220 198 / 40%);
 
+}
+
+.main-part {
+display: flex;
+flex-direction: row;
 }
 
 .left-part {
@@ -139,4 +142,15 @@ section {
 .soft-list-item,
 .languages-list-item {
     margin-top: 15px;
+}
+
+.cv-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: var(--third-text-color);
+        background-color: #faea68;
 }
