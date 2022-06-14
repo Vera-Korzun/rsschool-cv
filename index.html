@@ -13,17 +13,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="main-part">
         <aside class="left-part">
-          <header>
-            <img class="main-img" src="./img/vera_korzun.jpg" alt="My photo" />
-            <h1 class="main-title">Vera Korzun</h1>
-            <h2 class="main-title-description">Front-end developer</h2>
-          </header>
+          <img class="main-img" src="./img/vera_korzun.jpg" alt="My photo" />
+          <h1 class="main-title">Vera Korzun</h1>
+          <h2 class="main-title-description">Front-end developer</h2>
 
           <section class="contacts">
             <h3 class="second-title">Contacts</h3>
@@ -117,25 +119,51 @@
             </ul>
           </section>
         </aside>
-        <div>
-          <section>
-            <h4>Information about me</h4>
-            <p>
+        <div class="right-part">
+          <header>
+            <nav class="navigation">
+              <ul class="list navigation-list">
+                <li class="navigation-list-item">
+                  <a href="#info" class="link navigation-link"
+                    >Information about me</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#experience" class="link navigation-link"
+                    >My work experience</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#education" class="link navigation-link"
+                    >My education</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#examples" class="link navigation-link"
+                    >Code examples</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="info">
+            <h4 class="second-title">Information about me</h4>
+            <p class="info-description">
               I am looking for a junior front-end developer position to provide
               great results for my future team, gain experience and improve my
               developer skills.
             </p>
           </section>
-          <section>
-            <h4>My work experience</h4>
-            <ul class="list">
-              <li>
+          <section class="experience">
+            <h4 class="second-title">My work experience</h4>
+            <ul class="list experience-list">
+              <li class="experience-list-item">
                 <a
-                  class="link"
+                  class="link experience-link"
                   href="https://read-book-teamproject.netlify.app/"
                   >Books Reading</a
                 >
-                <ul class="list">
+                <ul class="experience-list-description">
                   <li>
                     The application allows you to control how long you read a
                     certain number of books in a specified period of time.
@@ -143,22 +171,24 @@
                   <li>The teamproject is built with ReactJs and NodeJs.</li>
                 </ul>
               </li>
-              <li>
+              <li class="experience-list-item">
                 <a
-                  class="link"
+                  class="link experience-link"
                   href="https://vera-korzun-teamproject-3.netlify.app/"
                   >SlimMom</a
                 >
-                <ul class="list">
+                <ul class="experience-list-description">
                   <li>Web-app for diet-planning and calories calculation.</li>
                   <li>The teamproject is built with ReactJS and Redux.</li>
                 </ul>
               </li>
-              <li>
-                <a class="link" href="https://vera-korzun.github.io/Project-2/"
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://vera-korzun.github.io/Project-2/"
                   >OLX SHOP
                 </a>
-                <ul class="list">
+                <ul class="experience-list-description">
                   <li>
                     Online shop for people who want to publish an advertisement
                     for the sale, purchase or advertisement of a product. .
@@ -169,11 +199,13 @@
                   </li>
                 </ul>
               </li>
-              <li>
-                <a class="link" href="https://vera-korzun.github.io/Project-1/"
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://vera-korzun.github.io/Project-1/"
                   >HelloEN
                 </a>
-                <ul class="list">
+                <ul class="experience-list-description">
                   <li>Information portal for english teaching school.</li>
                   <li>
                     The teamproject is built with JS, HTML, SASS, FlexBox.
@@ -182,46 +214,77 @@
               </li>
             </ul>
           </section>
-          <section>
-            <h4>My education</h4>
-            <ul class="list">
-              <li>
-                <p>2020-2021</p>
-                <div>
-                  <p>Fullstack JS Developer</p>
-                  <p>GoIT, Ukraine</p>
+          <section class="education">
+            <h4 class="second-title">My education</h4>
+            <ul class="list education-list">
+              <li class="education-list-item">
+                <p class="education-list-year">2020-2021</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">Fullstack JS Developer</p>
+                  <p class="education-list-place">GoIT, Ukraine</p>
                 </div>
               </li>
-              <li>
-                <p>2017</p>
-                <div>
-                  <p>Foreign technicians and engineers</p>
+              <li class="education-list-item">
+                <p class="education-list-year">2017</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">
+                    Foreign technicians and engineers
+                  </p>
                   <p>UTI, Sweden</p>
                 </div>
               </li>
-              <li>
-                <p>2010-2012</p>
-                <div>
-                  <p>Finance</p>
+              <li class="education-list-item">
+                <p class="education-list-year">2010-2012</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">Finance</p>
                   <p>
                     School of Business of Belarusian State University, Belarus
                   </p>
                   <p>financier</p>
                 </div>
               </li>
-              <li>
-                <p>2005-2010</p>
-                <div>
-                  <p>Radiophysics and computer technologies</p>
+              <li class="education-list-item">
+                <p class="education-list-year">2005-2010</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">
+                    Radiophysics and computer technologies
+                  </p>
                   <p>Belarusian State University, Belarus</p>
                   <p>physicist-engineer</p>
                 </div>
               </li>
             </ul>
           </section>
-          <section>
-            <h4>Code examples</h4>
-            <img src="./img/code.jpg" alt="Code examples" width="700" />
+          <section class="examples">
+            <h4 class="second-title">Code examples</h4>
+            <pre class="examples-code">
+const randomIntegerFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+const makeTransaction = (transaction) => {
+  return new Promise((resolve, reject) => {
+    const delay = randomIntegerFromInterval(200, 500);
+    setTimeout(() => {
+      const canProcess = Math.random() > 0.3;
+      if (canProcess) {
+        const result = {id: transaction.id, delay:delay}
+        resolve(result);
+      } else {
+        reject(transaction.id);
+      }
+    }, delay);
+  });
+};
+
+const logSuccess = (result) => {
+  console.log(`Transaction ${result.id} processed in ${result.delay}ms`);
+};
+const logError = id => {
+  console.warn(`Error processing transaction ${id}. Please try again later.`);
+};
+                       
+                    </pre>
             <p>
               You can find more examples of my code
               <a href="https://github.com/Vera-Korzun">here</a>
@@ -232,7 +295,10 @@
 
       <footer class="cv-footer">
         <div>
-          <a class="link" href="https://github.com/Vera-Korzun" target="_blank"
+          <a
+            class="link footer-link"
+            href="https://github.com/Vera-Korzun"
+            target="_blank"
             >My GitHub</a
           >
         </div>
