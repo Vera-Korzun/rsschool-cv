@@ -1,6 +1,7 @@
 :root {
     --primary-text-color: #4B4E6D;
     --secondary-text-color:#84DCC6;
+    --third-text-color: #505050;
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #95A3B3
 } 
@@ -55,6 +56,10 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    margin: 25px auto;
+}
+
 .container {
     margin: 20px auto;
     width: 1024px;
@@ -63,4 +68,75 @@ body {
     background-color: #ffffff;
     box-shadow: 10px 10px 19px 10px rgb(132 220 198 / 40%);
 
+}
+
+.left-part {
+    background-color: var(--secondary-bg-color);
+    color: var(--third-text-color);
+    max-width: 250px;
+    padding: 25px;
+}
+
+.main-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.14;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-title-description {
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+}
+
+.second-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: var(--third-text-color) solid 1px;
+}
+
+.contacts-list-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list-img {
+    margin-right: 10px;
+}
+
+.contacts-list-item:hover {
+    color: var(--primary-text-color);
+    font-size: 18px;
+
+}
+
+.tech-skills-list,
+.soft-skills-list,
+.languages-list {
+    padding-left: 20px;
+}
+
+.tech-list-item,
+.soft-list-item,
+.languages-list-item {
+    margin-top: 15px;
 }
