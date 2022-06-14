@@ -1,47 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1 class="title">Vera Korzun</h1>
-    <h2 class="title-second">Front-end developer</h2>
-    <section class="contacts">
-      <h3 class="second-title">Contacts</h3>
-      <ul class="list contacts-list">
-        <li class="contacts-list-item">
-          <a class="contacts-link" href="tel:+46765771605"> +46765771605 </a>
-        </li>
-        <li class="contacts-list-item">
-          <a class="contacts-link" href="mailto:veraminich@gmail.com">
-            veraminich@gmail.com
-          </a>
-        </li>
-        <li class="contacts-list-item">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-part">
+        <aside class="left-part">
+          <img class="main-img" src="./img/vera_korzun.jpg" alt="My photo" />
+          <h1 class="main-title">Vera Korzun</h1>
+          <h2 class="main-title-description">Front-end developer</h2>
+
+          <section class="contacts">
+            <h3 class="second-title">Contacts</h3>
+            <ul class="list">
+              <li class="contacts-list-item">
+                <img
+                  class="contacts-list-img"
+                  src="./icon/phone.svg"
+                  alt="Phone icon"
+                  width="30"
+                  height="30"
+                />
+                <a class="link contacts-link" href="tel:+46765771605">
+                  +46765771605
+                </a>
+              </li>
+              <li class="contacts-list-item">
+                <img
+                  class="contacts-list-img"
+                  src="./icon/email.svg"
+                  alt="Email icon"
+                  width="30"
+                  height="30"
+                />
+                <a
+                  class="link contacts-link"
+                  href="mailto:veraminich@gmail.com"
+                >
+                  veraminich@gmail.com
+                </a>
+              </li>
+              <li class="contacts-list-item">
+                <img
+                  class="contacts-list-img"
+                  src="./icon/linkedin.svg"
+                  alt="Linkedin icon"
+                  width="30"
+                  height="30"
+                />
+                <a
+                  class="link contacts-link"
+                  href="https://www.linkedin.com/in/vera-korzun-176ab598/"
+                >
+                  Vera-Korzun
+                </a>
+              </li>
+              <li class="contacts-list-item">
+                <img
+                  class="contacts-list-img"
+                  src="./icon/paper-plane.svg"
+                  alt="Telegram icon"
+                  width="30"
+                  height="30"
+                />
+                <span>Vera_KM</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="tech-skills">
+            <h3 class="second-title">Technical skills</h3>
+            <ul class="tech-skills-list">
+              <li class="tech-list-item">HTML5</li>
+              <li class="tech-list-item">CSS3/SASS</li>
+              <li class="tech-list-item">JavaScript</li>
+              <li class="tech-list-item">React Js, Redux</li>
+              <li class="tech-list-item">Node Js</li>
+              <li class="tech-list-item">VSCode</li>
+              <li class="tech-list-item">Figma</li>
+              <li class="tech-list-item">GIT/GitHub</li>
+              <li class="tech-list-item">MongoDB</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="second-title">Soft skills</h3>
+            <ul class="list">
+              <li class="soft-list-item">Desire to learn</li>
+              <li class="soft-list-item">Critical thinking</li>
+              <li class="soft-list-item">Problem solving</li>
+              <li class="soft-list-item">Teamwork</li>
+              <li class="soft-list-item">Result-oriented</li>
+              <li class="soft-list-item">Enthusiasm</li>
+            </ul>
+          </section>
+          <section>
+            <h3 class="second-title">Languages</h3>
+            <ul class="languages-list">
+              <li class="languages-list-item">English - intermediate</li>
+              <li class="languages-list-item">Swedish -intermediate</li>
+              <li class="languages-list-item">Russian - native</li>
+            </ul>
+          </section>
+        </aside>
+        <div class="right-part">
+          <header>
+            <nav class="navigation">
+              <ul class="list navigation-list">
+                <li class="navigation-list-item">
+                  <a href="#info" class="link navigation-link"
+                    >Information about me</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#experience" class="link navigation-link"
+                    >My work experience</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#education" class="link navigation-link"
+                    >My education</a
+                  >
+                </li>
+                <li class="navigation-list-item">
+                  <a href="#examples" class="link navigation-link"
+                    >Code examples</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="info">
+            <h4 class="second-title">Information about me</h4>
+            <p class="info-description">
+              I am looking for a junior front-end developer position to provide
+              great results for my future team, gain experience and improve my
+              developer skills.
+            </p>
+          </section>
+          <section class="experience">
+            <h4 class="second-title">My work experience</h4>
+            <ul class="list experience-list">
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://read-book-teamproject.netlify.app/"
+                  >Books Reading</a
+                >
+                <ul class="experience-list-description">
+                  <li>
+                    The application allows you to control how long you read a
+                    certain number of books in a specified period of time.
+                  </li>
+                  <li>The teamproject is built with ReactJs and NodeJs.</li>
+                </ul>
+              </li>
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://vera-korzun-teamproject-3.netlify.app/"
+                  >SlimMom</a
+                >
+                <ul class="experience-list-description">
+                  <li>Web-app for diet-planning and calories calculation.</li>
+                  <li>The teamproject is built with ReactJS and Redux.</li>
+                </ul>
+              </li>
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://vera-korzun.github.io/Project-2/"
+                  >OLX SHOP
+                </a>
+                <ul class="experience-list-description">
+                  <li>
+                    Online shop for people who want to publish an advertisement
+                    for the sale, purchase or advertisement of a product. .
+                  </li>
+                  <li>
+                    The teamproject is built with webpack, written in vanilla
+                    JS.
+                  </li>
+                </ul>
+              </li>
+              <li class="experience-list-item">
+                <a
+                  class="link experience-link"
+                  href="https://vera-korzun.github.io/Project-1/"
+                  >HelloEN
+                </a>
+                <ul class="experience-list-description">
+                  <li>Information portal for english teaching school.</li>
+                  <li>
+                    The teamproject is built with JS, HTML, SASS, FlexBox.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="education">
+            <h4 class="second-title">My education</h4>
+            <ul class="list education-list">
+              <li class="education-list-item">
+                <p class="education-list-year">2020-2021</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">Fullstack JS Developer</p>
+                  <p class="education-list-place">GoIT, Ukraine</p>
+                </div>
+              </li>
+              <li class="education-list-item">
+                <p class="education-list-year">2017</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">
+                    Foreign technicians and engineers
+                  </p>
+                  <p>UTI, Sweden</p>
+                </div>
+              </li>
+              <li class="education-list-item">
+                <p class="education-list-year">2010-2012</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">Finance</p>
+                  <p>
+                    School of Business of Belarusian State University, Belarus
+                  </p>
+                  <p>financier</p>
+                </div>
+              </li>
+              <li class="education-list-item">
+                <p class="education-list-year">2005-2010</p>
+                <div class="education-list-description">
+                  <p class="education-list-position">
+                    Radiophysics and computer technologies
+                  </p>
+                  <p>Belarusian State University, Belarus</p>
+                  <p>physicist-engineer</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="examples">
+            <h4 class="second-title">Code examples</h4>
+            <pre class="examples-code">
+const randomIntegerFromInterval = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+const makeTransaction = (transaction) => {
+  return new Promise((resolve, reject) => {
+    const delay = randomIntegerFromInterval(200, 500);
+    setTimeout(() => {
+      const canProcess = Math.random() > 0.3;
+      if (canProcess) {
+        const result = {id: transaction.id, delay:delay}
+        resolve(result);
+      } else {
+        reject(transaction.id);
+      }
+    }, delay);
+  });
+};
+
+const logSuccess = (result) => {
+  console.log(`Transaction ${result.id} processed in ${result.delay}ms`);
+};
+const logError = id => {
+  console.warn(`Error processing transaction ${id}. Please try again later.`);
+};
+                       
+                    </pre>
+            <p>
+              You can find more examples of my code
+              <a href="https://github.com/Vera-Korzun">here</a>
+            </p>
+          </section>
+        </div>
+      </div>
+
+      <footer class="cv-footer">
+        <div>
           <a
-            class="contacts-link"
-            href="https://www.linkedin.com/in/vera-korzun-176ab598/"
+            class="link footer-link"
+            href="https://github.com/Vera-Korzun"
             target="_blank"
+            >My GitHub</a
           >
-            Vera-Korzun
+        </div>
+        <div>
+          <a class="link" href="https://rs.school/js/" target="_blank">
+            <img
+              src="./icon/rs_school_js.svg"
+              alt="RS School logo"
+              width="100"
+            />
           </a>
-        </li>
-        <li class="contacts-list-item">
-          <a class="contacts-link" href="https://t.me/Vera_KM" target="_blank"
-            >Vera_KM
-          </a>
-        </li>
-      </ul>
-    </section>
+        </div>
+        <div>2022</div>
+      </footer>
+    </div>
   </body>
 </html>
