@@ -1,0 +1,242 @@
+:root {
+    --primary-text-color: #4B4E6D;
+    --secondary-text-color:#84DCC6;
+    --third-text-color: #505050;
+    --primary-bg-color: #ffffff;
+    --secondary-bg-color: #95A3B3
+} 
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Cabin, sans-serif;
+    letter-spacing: 0.03em;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+section {
+    margin: 25px auto;
+}
+
+.container {
+    margin: 20px auto;
+    width: 1024px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 19px 10px var(--secondary-bg-color);
+
+}
+
+.main-part {
+display: flex;
+flex-direction: row;
+}
+
+.left-part {
+    background-color: var(--secondary-bg-color);
+    color: var(--third-text-color);
+    max-width: 250px;
+    padding: 25px;
+}
+
+.right-part {
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 0 25px 0 25px;
+    color: var(--primary-text-color);
+}
+
+.main-img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.14;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-title-description {
+        font-style: italic;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+}
+
+.second-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border-bottom: var(--third-text-color) solid 1px;
+}
+
+.contacts-list-item {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list-img {
+    margin-right: 10px;
+}
+
+.contacts-list-item:hover {
+    color: var(--primary-text-color);
+    font-size: 18px;
+
+}
+
+.tech-skills-list,
+.soft-skills-list,
+.languages-list {
+    padding-left: 20px;
+}
+
+.tech-list-item,
+.soft-list-item,
+.languages-list-item {
+    margin-top: 15px;
+}
+
+.navigation {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation-list-item {
+    font-weight: bolt;
+    font-size: 18px;
+    line-height: 1.14;
+
+}
+
+.navigation-link {
+    padding: 15px 10px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+}
+
+.info .second-title,
+.experience .second-title,
+.education .second-title,
+.examples .second-title {
+    text-align: left;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.experience-list-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.experience-link {
+    color:var(--primary-text-color);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+}
+
+.experience-link:hover {
+font-weight: 700;
+text-shadow: #95A3B3 1px 0 10px;
+}
+
+.experience-list-description {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.education-list-item:not(:last-child) {
+margin-bottom: 10px;
+}
+
+.education-list-year {
+font-weight: 400;
+font-size: 16px;
+line-height: 1;
+}
+
+.education-list-position {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.14;
+}
+
+.examples-code {
+    font-size: 12px;
+}
+
+.cv-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: var(--third-text-color);
+        background-color: #faea68;
+}
+
+.footer-link:hover {
+    color: var(--primary-text-color);
+}
