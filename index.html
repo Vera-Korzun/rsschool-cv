@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="container">
       <div class="main-part">
         <aside class="left-part">
-          <img class="main-img" src="./img/vera_korzun.jpg" alt="My photo">
+          <img class="main-img" src="./img/vera_korzun.jpg" alt="My photo" />
           <h1 class="main-title">Vera Korzun</h1>
           <h2 class="main-title-description">Front-end developer</h2>
           <section class="contacts">
@@ -32,7 +35,8 @@
                   src="./icon/phone.svg"
                   alt="Phone icon"
                   width="30"
-                  height="30">
+                  height="30"
+                />
                 <a class="link contacts-link" href="tel:+46765771605">
                   +46765771605
                 </a>
@@ -43,10 +47,12 @@
                   src="./icon/email.svg"
                   alt="Email icon"
                   width="30"
-                  height="30">
+                  height="30"
+                />
                 <a
                   class="link contacts-link"
-                  href="mailto:veraminich@gmail.com">
+                  href="mailto:veraminich@gmail.com"
+                >
                   veraminich@gmail.com
                 </a>
               </li>
@@ -56,10 +62,12 @@
                   src="./icon/linkedin.svg"
                   alt="Linkedin icon"
                   width="30"
-                  height="30">
+                  height="30"
+                />
                 <a
                   class="link contacts-link"
-                  href="https://www.linkedin.com/in/vera-korzun-176ab598/">
+                  href="https://www.linkedin.com/in/vera-korzun-176ab598/"
+                >
                   Vera-Korzun
                 </a>
               </li>
@@ -69,7 +77,8 @@
                   src="./icon/paper-plane.svg"
                   alt="Telegram icon"
                   width="30"
-                  height="30">
+                  height="30"
+                />
                 <span>Vera_KM</span>
               </li>
             </ul>
@@ -114,19 +123,23 @@
               <ul class="list navigation-list">
                 <li class="navigation-list-item">
                   <a href="#info" class="link navigation-link"
-                    >Information about me</a>
+                    >Information about me</a
+                  >
                 </li>
                 <li class="navigation-list-item">
                   <a href="#experience" class="link navigation-link"
-                    >My work experience</a>
+                    >My work experience</a
+                  >
                 </li>
                 <li class="navigation-list-item">
                   <a href="#education" class="link navigation-link"
-                    >My education</a>
+                    >My education</a
+                  >
                 </li>
                 <li class="navigation-list-item">
                   <a href="#examples" class="link navigation-link"
-                    >Code examples</a>
+                    >Code examples</a
+                  >
                 </li>
               </ul>
             </nav>
@@ -146,7 +159,8 @@
                 <a
                   class="link experience-link"
                   href="https://read-book-teamproject.netlify.app/"
-                  >Books Reading</a>
+                  >Books Reading</a
+                >
                 <ul class="experience-list-description">
                   <li>
                     The application allows you to control how long you read a
@@ -159,7 +173,8 @@
                 <a
                   class="link experience-link"
                   href="https://vera-korzun-teamproject-3.netlify.app/"
-                  >SlimMom</a>
+                  >SlimMom</a
+                >
                 <ul class="experience-list-description">
                   <li>Web-app for diet-planning and calories calculation.</li>
                   <li>The teamproject is built with ReactJS and Redux.</li>
@@ -242,27 +257,32 @@
             <h4 class="second-title">Code examples</h4>
             <pre class="examples-code">
 const randomIntegerFromInterval = (min, max) =&gt; {
-return Math.floor(Math.random() * (max - min + 1) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
 const makeTransaction = (transaction) =&gt; {
-return new Promise((resolve, reject) =&gt; {
-const delay = randomIntegerFromInterval(200, 500);
-setTimeout(() =&gt; {
-const canProcess = Math.random() &gt; 0.3;
-if (canProcess) {
-const result = {id: transaction.id, delay:delay}
-resolve(result);
-} else {
-reject(transaction.id);
-}}, delay);
-});
+  return new Promise((resolve, reject) =&gt; {
+    const delay = randomIntegerFromInterval(200, 500);
+    setTimeout(() =&gt; {
+      const canProcess = Math.random() &gt; 0.3;
+      if (canProcess) {
+        const result = { id: transaction.id, delay: delay }
+        resolve(result);
+      } else {
+        reject(transaction.id);
+      }
+    }, delay);
+  });
 };
+
 const logSuccess = (result) =&gt; {
-console.log(`Transaction ${result.id} processed in ${result.delay}ms`);
+  console.log(`Transaction ${result.id} processed in ${result.delay}ms`);
 };
-const logError = id =&gt; {
-console.warn(`Error processing transaction ${id}. Please try again later.`);
-};</pre>
+const logError = (id) =&gt; {
+  console.warn(`Error processing transaction ${id}. Please try again later.`);
+};
+</pre
+            >
             <p>
               You can find more examples of my code
               <a href="https://github.com/Vera-Korzun">here</a>
@@ -276,18 +296,20 @@ console.warn(`Error processing transaction ${id}. Please try again later.`);
             class="link footer-link"
             href="https://github.com/Vera-Korzun"
             target="_blank"
-            >My GitHub</a>
+            >My GitHub</a
+          >
         </div>
         <div>
           <a class="link" href="https://rs.school/js/" target="_blank">
             <img
               src="./icon/rs_school_js.svg"
               alt="RS School logo"
-              width="100">
+              width="100"
+            />
           </a>
         </div>
         <div>2022</div>
       </footer>
-    </div> 
+    </div>
   </body>
 </html>
